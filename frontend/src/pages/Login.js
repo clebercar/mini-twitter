@@ -9,7 +9,14 @@ export default class Login extends Component {
     };
 
     handleSubmit = e => {
-        this.setState({ username: e.target.value });
+        e.preventDefault();
+        const { username } = this.state;
+
+        if(!username.length) return;
+
+        localStorage.setItem('@GoTwitter:username', username);
+
+        this.props.history.push('/timeline')
     }
 
     handleInputChange = e => {

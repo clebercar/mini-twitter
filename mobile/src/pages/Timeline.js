@@ -6,10 +6,10 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 export default class Timeline extends Component {
   static navigationOptions = {
     title: "Início",
-    headerRigth: (
+    headerRight: (
       <TouchableOpacity onPress={() => {}}>
       <Icon
-        style={{ marginRIgth: 20 }}
+        style={{ marginRight: 20 }}
         name="add-circle-outline"
         size={24}
         color="#4BB0EE"
